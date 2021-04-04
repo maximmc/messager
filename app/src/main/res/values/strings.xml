@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Messager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chats_text">Чаты</string>
+    <string name="settings_text">Настройки</string>
+    <string name="settings_text_account">Аккаунт</string>
+    <string name="settings_menu_change_name_label">Изменить имя</string>
+    <string name="settings_menu_exit_label">Выход</string>
+</resources>
