@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.example.messager.R
 import com.example.messager.databinding.ActivityRegisterBinding
 import com.example.messager.ui.fragments.EnterPhoneNumberFragment
+import com.example.messager.utils.replaceFragment
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -23,8 +24,6 @@ class RegisterActivity : AppCompatActivity() {
         mToolbar = mBinding.registerToolbar
         setSupportActionBar(mToolbar)
         title = getString(R.string.register_title)
-        supportFragmentManager.beginTransaction()
-            .add(R.id.registerDataContainer, EnterPhoneNumberFragment())
-            .commit()
+        replaceFragment(EnterPhoneNumberFragment())
     }
 }

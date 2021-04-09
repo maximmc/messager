@@ -7,7 +7,7 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-    viewBinding.enabled = true
+    viewBinding.enabled=true
 
     defaultConfig {
         applicationId "com.example.messager"
@@ -34,10 +34,13 @@ android {
     }
 }
 
+apply plugin: "com.android.application"
+apply plugin: "com.google.gms.google-services"
+
 dependencies {
     implementation "com.mikepenz:materialdrawer:7.0.0"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-
+    implementation "com.google.firebase:firebase-auth:19.3.0"
 //required support lib modules
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "androidx.annotation:annotation:1.2.0"

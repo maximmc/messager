@@ -1,4 +1,4 @@
-package com.example.messager
+package com.example.messager.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,9 @@ import com.example.messager.activities.RegisterActivity
 import com.example.messager.databinding.ActivityMainBinding
 import com.example.messager.ui.fragments.ChatsFragment
 import com.example.messager.ui.objects.AppDrawer
+import com.example.messager.utils.replaceActivity
+import com.example.messager.utils.replaceFragment
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,13 +34,9 @@ class MainActivity : AppCompatActivity() {
         if(false) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.dataContainer,
-                    ChatsFragment()
-                ).commit()
+            replaceFragment(ChatsFragment())
         } else {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+            replaceActivity(RegisterActivity())
         }
     }
 
