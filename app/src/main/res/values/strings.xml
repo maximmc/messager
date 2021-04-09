@@ -7,4 +7,12 @@
     <string name="settings_text_account">Аккаунт</string>
     <string name="settings_menu_change_name_label">Изменить имя</string>
     <string name="settings_menu_exit_label">Выход</string>
+    <string name="cd_register_image">register_image</string>
+    <string name="enter_code_label">Введите код</string>
+    <string name="sent_message_text">Мы отправили SMS c кодом проверки на Ваш телефон</string>
+    <string name="enter_code_hint">- - - - - -</string>
+    <string name="register_title">Ваш телефон</string>
+    <string name="cd_register_btn_next">register_btn_next</string>
+    <string name="register_toast_empty_phone">Введите номер телефона</string>
+    <string name="register_toast_code_accepted">Код подтвержден!</string>
 </resources>
